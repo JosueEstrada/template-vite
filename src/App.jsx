@@ -1,36 +1,14 @@
-import { useEffect, useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '../public/vite.svg';
-import './App.css';
-
 function App() {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    console.log('count', count);
-  }, [count]);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1>Hello World!</h1>
+      <span>
+        Vite + React + TailwindCSS + Eslint Airbnb + Prettier +
+        Prettier-Tailwind
+      </span>
+      <div className="ml-4 flex h-24 border-2 border-gray-300 p-3 text-gray-700 shadow-md">
+        hpña
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="submit" onClick={() => setCount((value) => value + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

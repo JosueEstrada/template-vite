@@ -1,2 +1,24 @@
+# .prettierignore
+# * Build output
 dist
+build
 package-lock.json
+
+# IDE
+.idea
+.vscode
+
+# * Files
+**/*.md
+**/*.svg
+
+# * Node.js modules
+node_modules
+
+# * Test output
+test
+
+# * Temporary files
+.DS_Store
+*.tmp
+*.swp
